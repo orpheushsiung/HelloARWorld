@@ -1,0 +1,20 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello AR World</title>
+        <!-- place A-Frame script here -->
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <!-- place AR.js script here -->
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body>
+        <!-- AR.js embedded in A-Frame Scene -->
+        <a-scene embedded arjs>
+            <!-- add AR.js Marker Camera to Scene -->
+            <a-marker-camera preset="hiro">
+                <a-text value="Hello, World!" rotation="-90 0 0" color="red"></a-text>
+            </a-marker-camera>
+        </a-scene>
+    </body>
+</html>
